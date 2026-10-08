@@ -104,7 +104,7 @@ def play_sound(filename=None):
 
 def fetch_game_state():
     try:
-        resp = requests.get(STATE_URL,timeout=0.5)
+        resp = requests.get(STATE_URL,timeout=5)
         resp.raise_for_status()
         return resp.json()
     except Exception:
@@ -113,7 +113,7 @@ def fetch_game_state():
 
 def post(url, payload=None):
     try:
-        resp = requests.post(url,json=payload or {},timeout=0.5)
+        resp = requests.post(url,json=payload or {},timeout=5)
         try:
             data = resp.json()
         except Exception:
