@@ -40,7 +40,7 @@ st.markdown(
 # CONFIGURATION
 # -------------------------
 HOST_PASSWORD = "sam123"
-API_BASE = "https://samspokergame.streamlit.app/"
+API_BASE = "https://sams-poker-api.onrender.com"
 FOLD_URL = f"{API_BASE}/fold"
 CHECK_URL = f"{API_BASE}/check"
 CALL_URL = f"{API_BASE}/call"
